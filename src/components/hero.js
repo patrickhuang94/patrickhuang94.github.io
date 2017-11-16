@@ -122,19 +122,20 @@ class Hero extends React.Component {
 								</p>
 								<p>
 									When I'm not coding, you can catch me on <a href="http://soundcloud.com/brookhollow"
-									target="_blank" style={keywordStyle}>Soundcloud</a>, playing Hearthstone, and bouldering!
+									target="_blank" rel="noopener noreferrer" style={keywordStyle}>Soundcloud</a>,
+									playing Hearthstone, and bouldering!
 								</p>
 							</div>
 						</div>
 
 						<div style={socialIconsContainer}>
-							<a href="https://www.linkedin.com/in/patrickhhuang/" target="_blank" style={outerIconStyle} key={1}>
+							<a href="https://www.linkedin.com/in/patrickhhuang/" target="_blank" style={outerIconStyle} key={1} rel="noopener noreferrer">
 								<i class="fa fa-linkedin" style={iconStyle} key={1}></i>
 							</a>
-							<a href="https://github.com/patrickhuang94" target="_blank" style={outerIconStyle} key={2}>
+							<a href="https://github.com/patrickhuang94" target="_blank" style={outerIconStyle} key={2} rel="noopener noreferrer">
 								<i class="fa fa-github" style={iconStyle} key={2}></i>
 							</a>
-							<a href="https://stackoverflow.com/users/2557256/patrickhuang94" target="_blank" style={outerIconStyle} key={3}>
+							<a href="https://stackoverflow.com/users/2557256/patrickhuang94" target="_blank" style={outerIconStyle} key={3} rel="noopener noreferrer">
 								<i class="fa fa-stack-overflow" style={iconStyle} key={3}></i>
 							</a>
 							<a href="mailto:patrickhuang94@gmail.com" target="_top" style={outerIconStyle} key={4}>
