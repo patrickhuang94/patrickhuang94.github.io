@@ -48,7 +48,7 @@ class App extends React.Component {
 					<Footer />
 				</div>
 
-				<a href="../../Resume.pdf" target="_blank">
+				<a href="../../Resume.pdf" type="application/pdf" target="_blank">
 					<FloatingButton style={floatingButtonStyle} backgroundColor="#1f6cc2">
 						<Resume />
 					</FloatingButton>
