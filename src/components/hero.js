@@ -22,8 +22,9 @@ const heroContainer = {
 	background: 'linear-gradient(#1FBDC2 60%, #FFFFFF 40%)'
 }
 
-const customPaperStyle = {
+const heroPaperStyle = {
 	...paperStyle,
+	padding: '0px',
 	height: '100%'
 }
 
@@ -101,7 +102,7 @@ class Hero extends React.Component {
 		return (
 			<div style={heroContainer}>
 				<div style={sectionWidthContainer}>
-					<Paper style={customPaperStyle} zDepth={2}>
+					<Paper style={heroPaperStyle} zDepth={2}>
 						<div style={cardContainer}>
 							<div style={imageContainer}>
 								<img style={imageStyle} />

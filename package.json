@@ -7,6 +7,7 @@
 		"radium": "^0.19.6",
 		"react": "^16.1.1",
 		"react-dom": "^16.1.1",
+		"react-router-dom": "^4.2.2",
 		"react-scripts": "1.0.17",
 		"react-tap-event-plugin": "^3.0.2",
 		"wowjs": "^1.1.3"

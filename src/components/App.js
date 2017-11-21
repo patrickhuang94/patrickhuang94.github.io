@@ -2,13 +2,14 @@ import React from 'react'
 
 import WOW from 'wowjs'
 
-import FloatingButton from 'material-ui/FloatingActionButton'
-import Resume from 'material-ui/svg-icons/action/description'
+// import FloatingButton from 'material-ui/FloatingActionButton'
+// import Resume from 'material-ui/svg-icons/action/description'
 
 // import Header from './header'
 import Hero from './hero'
 import TechStack from './techStack'
 import Experience from './experience'
+// import Projects from './projects'
 import Footer from './footer'
 
 const appStyle = {
@@ -25,11 +26,17 @@ const appContainerStyle = {
 	padding: '0px 0px 0px 0px'
 }
 
-const floatingButtonStyle = {
-	position: 'fixed',
-	bottom: '25px',
-	right: '25px'
-}
+// const floatingButtonStyle = {
+// 	position: 'fixed',
+// 	bottom: '25px',
+// 	right: '25px'
+// }
+
+// <a href="../../Resume.pdf" type="application/pdf" target="_blank">
+// 	<FloatingButton style={floatingButtonStyle} backgroundColor="#1f6cc2">
+// 		<Resume />
+// 	</FloatingButton>
+// </a>
 
 class App extends React.Component {
 	componentDidMount() {
@@ -48,11 +55,6 @@ class App extends React.Component {
 					<Footer />
 				</div>
 
-				<a href="../../Resume.pdf" type="application/pdf" target="_blank">
-					<FloatingButton style={floatingButtonStyle} backgroundColor="#1f6cc2">
-						<Resume />
-					</FloatingButton>
-				</a>
 			</div>
 		)
 	}

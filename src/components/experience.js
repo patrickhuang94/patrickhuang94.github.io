@@ -16,7 +16,7 @@ const experienceContainer = {
 	background: '#EEEEEE'
 }
 
-class ExperienceLayout extends React.Component {
+class Experience extends React.Component {
 	constructor(props) {
 		super(props)
 
@@ -111,4 +111,4 @@ class ExperienceLayout extends React.Component {
 	}
 }
 
-export default Radium(ExperienceLayout)
+export default Radium(Experience)

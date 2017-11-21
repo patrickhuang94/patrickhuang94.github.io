@@ -26,16 +26,11 @@ import {
 	paragraphBottomMarginStyle
 } from '../styles/textStyles'
 
-const customPaperStyle = {
-	...paperStyle,
-	padding: '25px'
-}
-
 class ExperienceCard extends React.Component {
 	render() {
 		return (
 			<div style={cardContainer}>
-				<Paper style={customPaperStyle} zDepth={2}>
+				<Paper style={paperStyle} zDepth={2}>
 					<div style={cardTopContainer}>
 						<div style={titleAndRoleContainer}>
 							<h2>{this.props.name}</h2>
