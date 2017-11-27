@@ -9,13 +9,14 @@ import {
 } from './styles/sharedStyles'
 
 const cardsSectionWidthContainer = {
-	...sectionWidthContainer,
-	width: '90%'
+	display: 'flex',
+	width: '100%'
 }
 
 const projectsContainer = {
 	display: 'flex',
 	flexDirection: 'column',
+	alignItems: 'center',
 	justifyContent: 'center',
 	padding: '30px 0px',
 	width: '100%',
@@ -54,18 +55,18 @@ class Projects extends React.Component {
 					<div style={sectionTitleContainer}>
 						<h1>Projects</h1>
 					</div>
-				</div>
-				<div style={cardsSectionWidthContainer}>
-					<div style={cardsContainer}>
-						{
-							this.state.projects.map((project) => {
-								return (
-									<ProjectCard
-										name={project.name}
+					<div style={cardsSectionWidthContainer}>
+						<div style={cardsContainer}>
+							{
+								this.state.projects.map((project) => {
+									return (
+										<ProjectCard
+											name={project.name}
 										/>
-								)
-							})
-						}
+									)
+								})
+							}
+						</div>
 					</div>
 				</div>
 			</div>

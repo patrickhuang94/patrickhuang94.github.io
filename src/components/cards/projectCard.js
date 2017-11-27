@@ -14,11 +14,14 @@ import {
 const cardContainer = {
 	display: 'flex',
 	minWidth: '30%'
-	// width: '33%'
 }
 
 const cardTopContainer = {
 	display: 'flex'
+}
+
+const cardHeight = {
+	height: '150px'
 }
 
 class ProjectCard extends React.Component {
@@ -26,7 +29,7 @@ class ProjectCard extends React.Component {
 		return (
 			<div style={cardContainer}>
 				<Paper style={paperStyle} zDepth={2}>
-					<div>
+					<div style={cardHeight}>
 						<h2>{this.props.name}</h2>
 					</div>
 				</Paper>

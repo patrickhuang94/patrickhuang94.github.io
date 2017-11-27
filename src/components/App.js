@@ -52,6 +52,9 @@ class App extends React.Component {
 					<Hero />
 					<TechStack />
 					<Experience />
+					{
+						/* <Projects /> */
+					}
 					<Footer />
 				</div>
 
