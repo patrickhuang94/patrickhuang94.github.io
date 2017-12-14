@@ -9,7 +9,7 @@ import WOW from 'wowjs'
 import Hero from './hero'
 import TechStack from './techStack'
 import Experience from './experience'
-// import Projects from './projects'
+import Projects from './projects'
 import Footer from './footer'
 
 const appStyle = {
@@ -52,9 +52,7 @@ class App extends React.Component {
 					<Hero />
 					<TechStack />
 					<Experience />
-					{
-						/* <Projects /> */
-					}
+					<Projects />
 					<Footer />
 				</div>
 

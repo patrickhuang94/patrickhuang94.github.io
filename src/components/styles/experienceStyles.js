@@ -1,13 +1,3 @@
-export const cardContainer = {
-	display: 'flex',
-	width: '100%',
-	// margin: '25px 0px',
-	marginBottom: '40px',
-	'@media screen and (max-width: 899px)': {
-		justifyContent: 'center'
-	}
-}
-
 export const cardTopContainer = {
 	display: 'flex',
 	justifyContent: 'space-between',

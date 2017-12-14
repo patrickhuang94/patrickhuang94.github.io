@@ -11,22 +11,24 @@ import {
 const cardsSectionWidthContainer = {
 	display: 'flex',
 	width: '100%'
+	// width: '700px'
 }
 
 const projectsContainer = {
 	display: 'flex',
-	flexDirection: 'column',
-	alignItems: 'center',
 	justifyContent: 'center',
 	padding: '30px 0px',
 	width: '100%',
-	background: '#FFFFFF'
+	background: '#FFFFFF',
 }
 
 const cardsContainer = {
 	display: 'flex',
 	justifyContent: 'space-between',
-	width: '100%'
+	width: '100%',
+	'@media screen and (max-width: 649px)': {
+		flexDirection: 'column',
+	}
 }
 
 class Projects extends React.Component {
@@ -36,13 +38,12 @@ class Projects extends React.Component {
 		this.state = {
 			projects: [
 				{
-					name: 'React-Reddit'
+					name: 'React-Reddit',
+					description: 'Redesign of Reddit'
 				},
 				{
-					name: 'Informate'
-				},
-				{
-					name: 'Receptional'
+					name: 'Informate',
+					description: 'Discover things you did not know'
 				}
 			]
 		}
@@ -55,19 +56,16 @@ class Projects extends React.Component {
 					<div style={sectionTitleContainer}>
 						<h1>Projects</h1>
 					</div>
-					<div style={cardsSectionWidthContainer}>
-						<div style={cardsContainer}>
-							{
-								this.state.projects.map((project) => {
-									return (
-										<ProjectCard
-											name={project.name}
-										/>
-									)
-								})
-							}
-						</div>
-					</div>
+					{
+						this.state.projects.map((project) => {
+							return (
+								<ProjectCard
+									name={project.name}
+									description={project.description}
+								/>
+							)
+						})
+					}
 				</div>
 			</div>
 		)
