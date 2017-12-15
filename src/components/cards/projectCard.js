@@ -4,31 +4,43 @@ import Radium from 'radium'
 import Paper from 'material-ui/Paper'
 
 import {
-	cardContainer,
+	cardTopContainer,
 	paperStyle
 } from '../styles/cardStyles'
 
 import {
-	cardTopContainer
-} from '../styles/experienceStyles'
-
-import {
+	marginTopStyle,
 	paragraphBottomMarginStyle
 } from '../styles/textStyles'
 
+const cardContainer = {
+	display: 'flex',
+	width: '100%'
+}
+
 const cardHeight = {
 	height: '150px'
+}
+
+const nameAndDescriptionContainer = {
+	display: 'flex',
+	flexDirection: 'column'
+}
+
+const customPaperStyle = {
+	...paperStyle,
+	maxWidth: '300px'
 }
 
 class ProjectCard extends React.Component {
 	render() {
 		return (
 			<div style={cardContainer}>
-				<Paper style={paperStyle} zDepth={2}>
+				<Paper style={customPaperStyle} zDepth={2}>
 					<div style={cardTopContainer}>
-						<div style={{display: 'flex', flexDirection: 'column'}}>
+						<div style={nameAndDescriptionContainer}>
 							<h2>{this.props.name}</h2>
-							<h4>{this.props.description}</h4>
+							<p style={marginTopStyle}>{this.props.description}</p>
 						</div>
 					</div>
 				</Paper>

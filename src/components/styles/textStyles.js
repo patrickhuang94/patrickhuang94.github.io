@@ -1,3 +1,7 @@
+export const marginTopStyle = {
+	marginTop: '8px'
+}
+
 export const paragraphBottomMarginStyle = {
 	marginBottom: '15px'
 }

@@ -5,9 +5,7 @@ import Paper from 'material-ui/Paper'
 import LocationIcon from 'material-ui/svg-icons/communication/location-on'
 
 import {
-	cardTopContainer,
 	titleAndRoleContainer,
-	marginTopStyle,
 	descriptionContainer,
 	hideWhenSmall,
 	iconStyle,
@@ -19,10 +17,12 @@ import {
 
 import {
 	cardContainer,
+	cardTopContainer,
 	paperStyle
 } from '../styles/cardStyles'
 
 import {
+	marginTopStyle,
 	paragraphBottomMarginStyle
 } from '../styles/textStyles'
 

@@ -7,6 +7,14 @@ export const cardContainer = {
 	}
 }
 
+export const cardTopContainer = {
+	display: 'flex',
+	justifyContent: 'space-between',
+	'@media screen and (max-width: 649px)': {
+		flexDirection: 'column'
+	}
+}
+
 export const paperStyle = {
 	display: 'flex',
 	flexDirection: 'column',

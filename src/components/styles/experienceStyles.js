@@ -1,18 +1,6 @@
-export const cardTopContainer = {
-	display: 'flex',
-	justifyContent: 'space-between',
-	'@media screen and (max-width: 649px)': {
-		flexDirection: 'column'
-	}
-}
-
 export const titleAndRoleContainer = {
 	display: 'flex',
 	flexDirection: 'column'
-}
-
-export const marginTopStyle = {
-	marginTop: '8px'
 }
 
 export const descriptionContainer = {
