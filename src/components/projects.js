@@ -17,7 +17,7 @@ const cardsSectionWidthContainer = {
 const projectsContainer = {
 	display: 'flex',
 	justifyContent: 'center',
-	padding: '30px 0px',
+	padding: '30px 0px 50px 0px',
 	width: '100%',
 	background: '#FFFFFF',
 }
@@ -31,6 +31,15 @@ const cardsContainer = {
 	}
 }
 
+const projectCardContainer = {
+	display: 'flex',
+	justifyContent: 'space-around',
+	width: '100%',
+	'@media screen and (max-width: 649px)': {
+		flexDirection: 'column'
+	}
+}
+
 class Projects extends React.Component {
 	constructor(props) {
 		super(props)
@@ -39,16 +48,14 @@ class Projects extends React.Component {
 			projects: [
 				{
 					name: 'React-Reddit',
-					description: `With the current Reddit website still stuck in 2007, a redesign
-						was needed. The project was designed by Kevin Nguyen and implemented
-						with React, Redux, and Reddit's API.`
+					description: `The project is a redesign of the current Reddit web application and
+						implemented with React, Redux, and Reddit's API.`,
+					isLeftCard: true
 				},
 				{
 					name: 'Informate',
-					description: `Google looks up answers to questions you don't know, but
-						how can you find out things that you didn't know existed? This group
-						project focuses on allowing users to discover interesting facts submitted by
-						other users.`
+					description: `This group project focuses on allowing users to discover
+						interesting facts submitted by other users.`
 				}
 			]
 		}
@@ -61,14 +68,15 @@ class Projects extends React.Component {
 					<div style={sectionTitleContainer}>
 						<h1>Projects</h1>
 					</div>
-					<div style={{display: 'flex', justifyContent: 'space-around', width: '100%'}}>
+					<div style={projectCardContainer}>
 						{
 							this.state.projects.map((project) => {
 								return (
 									<ProjectCard
 										name={project.name}
 										description={project.description}
-										/>
+										isLeftCard={project.isLeftCard}
+									/>
 								)
 							})
 						}

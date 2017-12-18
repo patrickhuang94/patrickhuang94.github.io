@@ -18,6 +18,7 @@ export const cardTopContainer = {
 export const paperStyle = {
 	display: 'flex',
 	flexDirection: 'column',
+	justifyContent: 'space-between',
 	padding: '25px',
 	width: '100%',
 	maxWidth: '700px'

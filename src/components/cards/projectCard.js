@@ -2,6 +2,7 @@ import React from 'react'
 import Radium from 'radium'
 
 import Paper from 'material-ui/Paper'
+import RaisedButton from 'material-ui/RaisedButton'
 
 import {
 	cardTopContainer,
@@ -15,7 +16,10 @@ import {
 
 const cardContainer = {
 	display: 'flex',
-	width: '100%'
+	width: '100%',
+	'@media screen and (max-width: 649px)': {
+		margin: '0px 0px 30px 0px'
+	}
 }
 
 const cardHeight = {
@@ -27,21 +31,39 @@ const nameAndDescriptionContainer = {
 	flexDirection: 'column'
 }
 
-const customPaperStyle = {
-	...paperStyle,
-	maxWidth: '300px'
+const buttonColor = {
+	color: 'white'
+}
+
+const buttonStyle = {
+	marginTop: '15px'
 }
 
 class ProjectCard extends React.Component {
 	render() {
+		if (this.props.isLeftCard) {
+			cardContainer.marginRight = '30px'
+		} else {
+			cardContainer.marginRight = '0px'
+		}
+
 		return (
 			<div style={cardContainer}>
-				<Paper style={customPaperStyle} zDepth={2}>
+				<Paper style={paperStyle} zDepth={2}>
 					<div style={cardTopContainer}>
 						<div style={nameAndDescriptionContainer}>
 							<h2>{this.props.name}</h2>
 							<p style={marginTopStyle}>{this.props.description}</p>
 						</div>
+					</div>
+					<div>
+						<RaisedButton
+							label="Github"
+							labelColor="white"
+							buttonStyle={buttonColor}
+							style={buttonStyle}
+							backgroundColor="#1fbdc2"
+						/>
 					</div>
 				</Paper>
 			</div>
