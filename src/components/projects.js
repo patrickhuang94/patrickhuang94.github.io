@@ -8,27 +8,12 @@ import {
 	sectionTitleContainer
 } from './styles/sharedStyles'
 
-const cardsSectionWidthContainer = {
-	display: 'flex',
-	width: '100%'
-	// width: '700px'
-}
-
 const projectsContainer = {
 	display: 'flex',
 	justifyContent: 'center',
 	padding: '30px 0px 50px 0px',
 	width: '100%',
 	background: '#FFFFFF',
-}
-
-const cardsContainer = {
-	display: 'flex',
-	justifyContent: 'space-between',
-	width: '100%',
-	'@media screen and (max-width: 649px)': {
-		flexDirection: 'column',
-	}
 }
 
 const projectCardContainer = {
@@ -50,12 +35,14 @@ class Projects extends React.Component {
 					name: 'React-Reddit',
 					description: `The project is a redesign of the current Reddit web application and
 						implemented with React, Redux, and Reddit's API.`,
+					githubUrl: `http://github.com/patrickhuang94/react-reddit`,
 					isLeftCard: true
 				},
 				{
 					name: 'Informate',
 					description: `This group project focuses on allowing users to discover
-						interesting facts submitted by other users.`
+						interesting facts submitted by other users.`,
+					githubUrl: `http://github.com/patrickhuang94/informate`
 				}
 			]
 		}
@@ -76,6 +63,7 @@ class Projects extends React.Component {
 										name={project.name}
 										description={project.description}
 										isLeftCard={project.isLeftCard}
+										githubUrl={project.githubUrl}
 									/>
 								)
 							})

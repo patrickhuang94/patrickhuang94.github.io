@@ -103,13 +103,13 @@ class TechStack extends React.Component {
 							<h3 style={subheaderStyle}>I work with <span style={keywordStyle}>Node.js</span>. My proficiency with back-end development includes:</h3>
 							<ul>
 								<li>
-									Developing backend services using RESTful architecture and Promises
+									Developing backend services using RESTful architecture
+								</li>
+								<li>
+									Integration of third party API services (Facebook, Twitter, and Instagram)
 								</li>
 								<li>
 									Basic knowledge of cloud storage services (Amazon S3) and databases (MySQL)
-								</li>
-								<li>
-									Integration of third party API services (Facebook, Twitter, Network for Good)
 								</li>
 								<li>
 									Performing integration testing with Mocha, Sinon and Chai

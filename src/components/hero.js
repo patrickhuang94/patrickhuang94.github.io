@@ -105,11 +105,11 @@ class Hero extends React.Component {
 					<Paper style={heroPaperStyle} zDepth={2}>
 						<div style={cardContainer}>
 							<div style={imageContainer}>
-								<img style={imageStyle} />
+								<img style={imageStyle} alt="Profile" />
 							</div>
 
 							<div style={descriptionContainer}>
-								<h1 style={headingStyle}>Patrick Huang</h1>
+								<h1 style={headingStyle}>Hi, I'm Patrick Huang</h1>
 
 								<p style={paragraphBottomMarginStyle}>
 									I am a <span style={keywordStyle}>full stack web developer </span>

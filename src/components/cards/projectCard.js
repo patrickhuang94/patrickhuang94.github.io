@@ -10,8 +10,7 @@ import {
 } from '../styles/cardStyles'
 
 import {
-	marginTopStyle,
-	paragraphBottomMarginStyle
+	marginTopStyle
 } from '../styles/textStyles'
 
 const cardContainer = {
@@ -20,10 +19,6 @@ const cardContainer = {
 	'@media screen and (max-width: 649px)': {
 		margin: '0px 0px 30px 0px'
 	}
-}
-
-const cardHeight = {
-	height: '150px'
 }
 
 const nameAndDescriptionContainer = {
@@ -57,13 +52,15 @@ class ProjectCard extends React.Component {
 						</div>
 					</div>
 					<div>
-						<RaisedButton
-							label="Github"
-							labelColor="white"
-							buttonStyle={buttonColor}
-							style={buttonStyle}
-							backgroundColor="#1fbdc2"
-						/>
+						<a href={this.props.githubUrl} target="_blank">
+							<RaisedButton
+								label="Github"
+								labelColor="white"
+								buttonStyle={buttonColor}
+								style={buttonStyle}
+								backgroundColor="#1fbdc2"
+							/>
+						</a>
 					</div>
 				</Paper>
 			</div>
