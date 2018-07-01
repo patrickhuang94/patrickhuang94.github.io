@@ -13,6 +13,6 @@ export const centerAlignTextStyle = {
 }
 
 export const keywordStyle = {
-	fontWeight: '900',
+	fontWeight: '500',
 	color: '#1FBDC2'
 }
