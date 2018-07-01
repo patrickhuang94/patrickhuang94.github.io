@@ -11,7 +11,8 @@ import {
 const experienceContainer = {
 	display: 'flex',
 	justifyContent: 'center',
-	padding: '30px 0px',
+	paddingTop: 30,
+	paddingBottom: 30,
 	width: '100%',
 	background: '#EEEEEE'
 }
@@ -82,7 +83,8 @@ class Experience extends React.Component {
 		}
 	}
 
-	render() {
+	render () {
+		
 		return (
 			<div style={experienceContainer}>
 				<div style={sectionWidthContainer}>

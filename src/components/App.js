@@ -26,26 +26,17 @@ const appContainerStyle = {
 	padding: '0px 0px 0px 0px'
 }
 
-// const floatingButtonStyle = {
-// 	position: 'fixed',
-// 	bottom: '25px',
-// 	right: '25px'
-// }
-
-// <a href="../../Resume.pdf" type="application/pdf" target="_blank">
-// 	<FloatingButton style={floatingButtonStyle} backgroundColor="#1f6cc2">
-// 		<Resume />
-// 	</FloatingButton>
-// </a>
-
 class App extends React.Component {
-	componentDidMount() {
+	
+	componentDidMount () {
+		
 		new WOW.WOW({
 			offset: 25
 		}).init()
 	}
 
-	render() {
+	render () {
+		
 		return (
 			<div style={appStyle}>
 				<div style={appContainerStyle}>
@@ -55,7 +46,6 @@ class App extends React.Component {
 					<Projects />
 					<Footer />
 				</div>
-
 			</div>
 		)
 	}

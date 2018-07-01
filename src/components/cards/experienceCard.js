@@ -27,7 +27,9 @@ import {
 } from '../styles/textStyles'
 
 class ExperienceCard extends React.Component {
-	render() {
+
+	render () {
+
 		return (
 			<div style={cardContainer}>
 				<Paper style={paperStyle} zDepth={2}>
