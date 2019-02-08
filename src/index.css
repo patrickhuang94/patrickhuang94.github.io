@@ -20,21 +20,3 @@ p {
 ul {
 	line-height: 28px;
 }
-
-/* Disable flickering on initial page load */
-.wow {
-	visibility: hidden;
-}
-
-/* Shorten distance for animation */
-@keyframes fadeInDown {
-	from {
-		opacity: 0;
-		transform: translate3d(-100%, 0, 0);
-	}
-
-	to {
-		opacity: 1;
-		transform: none;
-	}
-}
