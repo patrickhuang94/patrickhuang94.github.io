@@ -1,21 +1,9 @@
 import React from 'react'
-
-import WOW from 'wowjs'
-
-// import FloatingButton from 'material-ui/FloatingActionButton'
-// import Resume from 'material-ui/svg-icons/action/description'
-
-// import Header from './header'
-import Hero from './hero'
-import TechStack from './techStack'
-import Experience from './experience'
-import Projects from './projects'
-import Footer from './footer'
+import Resume from './resume'
 
 const appStyle = {
 	height: '100%',
-	minHeight: '100%',
-	width: '100%'
+	width: '100%',
 }
 
 const appContainerStyle = {
@@ -23,28 +11,15 @@ const appContainerStyle = {
 	width: '100%',
 	minHeight: '100%',
 	margin: 'auto',
-	padding: '0px 0px 0px 0px'
+	padding: 0,
 }
 
 class App extends React.Component {
-	
-	componentDidMount () {
-		
-		new WOW.WOW({
-			offset: 25
-		}).init()
-	}
-
 	render () {
-		
 		return (
 			<div style={appStyle}>
 				<div style={appContainerStyle}>
-					<Hero />
-					<TechStack />
-					<Experience />
-					<Projects />
-					<Footer />
+					<Resume />
 				</div>
 			</div>
 		)
