@@ -7,16 +7,12 @@ import App from './components/App'
 import registerServiceWorker from './registerServiceWorker'
 import './index.css'
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-
 const app = (
-	<MuiThemeProvider>
-		<StyleRoot>
-			<Router>
-				<Route path="/" component={App} />
-			</Router>
-		</StyleRoot>
-	</MuiThemeProvider>
+	<StyleRoot>
+		<Router>
+			<Route path="/" component={App} />
+		</Router>
+	</StyleRoot>
 )
 
 ReactDOM.render(
